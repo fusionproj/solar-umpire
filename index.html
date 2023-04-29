@@ -1,302 +1,1015 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Solar Umpire</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
-<head>
-  <meta charset="utf-8">
-  <title>Solar Umpire</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
 
-  <!-- css -->
-  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700" rel="stylesheet">
-  <link href="css/bootstrap.css" rel="stylesheet" />
-  <link href="css/bootstrap-responsive.css" rel="stylesheet" />
-  <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
-  <link href="css/jcarousel.css" rel="stylesheet" />
-  <link href="css/flexslider.css" rel="stylesheet" />
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- Theme skin -->
-  <link href="skins/default.css" rel="stylesheet" />
-  <!-- Fav and touch icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
-  <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
-  <link rel="shortcut icon" href="ico/favicon.png" />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="css/google-font.css" rel="stylesheet" />
 
-  <!-- =======================================================
-    Theme Name: Flattern
-    Theme URL: https://bootstrapmade.com/flattern-multipurpose-bootstrap-template/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
-</head>
+    <!-- Icon Font Stylesheet -->
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
 
-<body>
-  <div id="wrapper">
-    <!-- toggle top area -->
-    <div class="hidden-top">
-      <div class="hidden-top-inner container">
-        <div class="row">
-          <div class="span12">
-            <ul>
-              <li><strong>We are available for any custom works this month</strong></li>
-              <li>Main office: Springville center X264, Park Ave S.01</li>
-              <li>Call us <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891</li>
-            </ul>
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark p-0 d-none">
+      <div class="row gx-0 d-none d-lg-flex">
+        <div class="col-lg-7 px-5 text-start">
+          <div class="h-100 d-inline-flex align-items-center me-4">
+            <small class="fa fa-map-marker-alt text-primary me-2"></small>
+            <small
+              >Basement, Plot No - 28, Chakkarpur, Sector 28, Gurugram, Haryana
+              122002</small
+            >
+          </div>
+          <div class="h-100 d-inline-flex align-items-center">
+            <small class="far fa-clock text-primary me-2"></small>
+            <small>Mon - Sat (09:00 AM - 06:00 PM)</small>
+          </div>
+        </div>
+        <div class="col-lg-5 px-5 text-end">
+          <div class="h-100 d-inline-flex align-items-center me-4">
+            <small class="fa fa-phone-alt text-primary me-2"></small>
+            <small>+91 - 95556 22146</small>
+          </div>
+          <div class="h-100 d-inline-flex align-items-center mx-n2">
+            <a
+              class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary"
+              href="https://www.facebook.com/people/RenewX-Solar-Umpire/100090796595436/"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary"
+              href="https://twitter.com/SolarUmpire"
+              ><i class="fab fa-twitter"></i
+            ></a>
+
+            <a
+              class="btn btn-square btn-link rounded-0"
+              href="https://www.instagram.com/Solar_Umpire_Official/"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </div>
         </div>
       </div>
     </div>
-    <!-- end toggle top area -->
-    <!-- start header -->
-    <header>
-      <div class="container ">
-        <!-- hidden top area toggle link -->
-        <div id="header-hidden-link">
-        </div>
-        <!-- end toggle link -->
-        <div class="row nomargin">
-          <div class="span12">
-            <div class="headnav">
-              
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="span4">
-            <div class="logo">
-              <a href="index.html"><img src="img/logo.png" alt="" class="logo" /></a>
-            </div>
-          </div>
-          <div class="span8">
-            <div class="navbar navbar-static-top">
-              <div class="navigation">
-                <nav>
-                  <ul class="nav topnav">
-                    <li class="active">
-                      <a href="index.html">Home</a>
-                    </li>
-                    <li class="">
-                        <a href="products.html">Solar Products</a>
-                    </li>
+    <!-- Topbar End -->
 
-<li class="">
-  <a href="otherProducts.html">Other Products</a>
-</li>
-                    <li class="">
-                        <a href="services.html">Services</a>
-                    </li>
-                    <li class="">
-                        <a href="vision.html">Vision</a>
-                    </li>
-                    <li class="">
-                        <a href="about.html">About us</a>
-                    </li>
-                    <li class="">
-                        <a href="contact.html">Contact</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-              <!-- end navigation -->
-            </div>
-          </div>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+      <a
+        href="index.html"
+        class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5"
+      >
+        <img src="./img/solar-umpire-logo.png" width="220px" height="120px" />
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler me-4"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="about.html" class="nav-item nav-link">About</a>
+          <a href="service.html" class="nav-item nav-link">Service</a>
+          <a href="project.html" class="nav-item nav-link">Project</a>
+
+          <a href="contact.html" class="nav-item nav-link">Contact</a>
         </div>
+        <a
+          href="https://wa.me/919555622146"
+          class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block"
+          >Get A Quote  <i class="fa fa-arrow-right ms-3"></i
+        ></a>
       </div>
-    </header>
-    <!-- end header -->
-    <section id="featured">
-      <!-- start slider -->
-      <!-- Slider -->
-      <div id="nivo-slider">
-        <div class="nivo-slider">
-          <!-- Slide #1 image -->
-          <img src="img/slides/nivo/solar-1.jpg" alt="" title="#caption-1" />
-          <!-- Slide #2 image -->
-          <img src="img/slides/nivo/solar-7.jpg" alt="" title="#caption-2" />
-          <!-- Slide #2 image -->
-          <img src="img/slides/nivo/solar-5.png" alt="" title="#caption-3" />
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="span12">
-              <!-- Slide #1 caption -->
-              <div class="nivo-caption" id="caption-1">
-                <div>
-                  <h2>RX SOLAR UMPIRE</h2>
-                  <p>
-                      Solar Umpire is a company inspired by energy conservation through solar powered products. We provide solutions and services for clean energy generation powered by solar energy and works towards enabling our customers to get low cost clean energy.
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="owl-carousel header-carousel position-relative">
+        <div
+          class="owl-carousel-item position-relative"
+          data-dot="<img src='img/carousel-1.jpg'>"
+        >
+          <img class="img-fluid" src="img/carousel-1.jpg" alt="" />
+          <div class="owl-carousel-inner">
+            <div class="container">
+              <div class="row justify-content-start">
+                <div class="col-10 col-lg-8">
+                  <h1 class="display-2 text-white animated slideInDown">
+                    Pioneers Of Solar And Renewable Energy
+                  </h1>
+                  <p class="fs-5 fw-medium text-white mb-4 pb-3">
+                    Solar Umpire is a premier solar energy company that offers
+                    sustainable and reliable solar solutions for homes,
+                    businesses, and industrial facilities. We are a trusted
+                    provider of solar panels and related products, and we are
+                    committed to empowering our customers with clean energy
+                    solutions that are eco-friendly and cost-effective.
                   </p>
-                  </div>
-              </div>
-              <!-- Slide #2 caption -->
-              <div class="nivo-caption" id="caption-2">
-                <div>
-                  <h2>Top Quality Products</strong></h2>
-                  <p>We strongly believes in the sun’s potential to significantly address the problems associated with power obtained from non-renewable sources of energy. It is with this passion that we aim to work and provide quality at utmost priority in the most cost effective manner.</p>
+                  <a
+                    href=""
+                    class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft"
+                    >Read More</a
+                  >
                 </div>
               </div>
-              <!-- Slide #2 caption -->
-              <div class="nivo-caption" id="caption-3">
-                <div>
-                  <h2>Customization as per Client Need</strong></h2>
-                    <p>We believe in treating our customers with respect and faith. We go through creativity, invention and innovation. We learn requirements of customer fully and act to satisfy their needs.</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="owl-carousel-item position-relative"
+          data-dot="<img src='img/carousel-2.jpg'>"
+        >
+          <img class="img-fluid" src="img/carousel-2.jpg" alt="" />
+          <div class="owl-carousel-inner">
+            <div class="container">
+              <div class="row justify-content-start">
+                <div class="col-10 col-lg-8">
+                  <h1 class="display-2 text-white animated slideInDown">
+                    Pioneers Of Solar And Renewable Energy
+                  </h1>
+                  <p class="fs-5 fw-medium text-white mb-4 pb-3">
+                    Solar Umpire is a premier solar energy company that offers
+                    sustainable and reliable solar solutions for homes,
+                    businesses, and industrial facilities. We are a trusted
+                    provider of solar panels and related products, and we are
+                    committed to empowering our customers with clean energy
+                    solutions that are eco-friendly and cost-effective.
+                  </p>
+                  <a
+                    href=""
+                    class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="owl-carousel-item position-relative"
+          data-dot="<img src='img/carousel-3.jpg'>"
+        >
+          <img class="img-fluid" src="img/carousel-3.jpg" alt="" />
+          <div class="owl-carousel-inner">
+            <div class="container">
+              <div class="row justify-content-start">
+                <div class="col-10 col-lg-8">
+                  <h1 class="display-2 text-white animated slideInDown">
+                    Pioneers Of Solar And Renewable Energy
+                  </h1>
+                  <p class="fs-5 fw-medium text-white mb-4 pb-3">
+                    Solar Umpire is a premier solar energy company that offers
+                    sustainable and reliable solar solutions for homes,
+                    businesses, and industrial facilities. We are a trusted
+                    provider of solar panels and related products, and we are
+                    committed to empowering our customers with clean energy
+                    solutions that are eco-friendly and cost-effective.
+                  </p>
+                  <a
+                    href=""
+                    class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft"
+                    >Read More</a
+                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- end slider -->
-    </section>
+    </div>
+    <!-- Carousel End -->
 
-    <section class="callaction">
+    <!-- Feature Start -->
+    <div class="container-xxl py-5">
       <div class="container">
-        <div class="row">
-          <div class="span12">
-            <div class="big-cta">
-              <div class="cta-text">
-                <h3>We've completed more than <span class="highlight"><strong>7 Projects</strong></span> this month!</h3>
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+            <div class="d-flex align-items-center mb-4">
+              <div class="btn-lg-square bg-primary rounded-circle me-3">
+                <i class="fa fa-users text-white"></i>
               </div>
-              <!-- <div class="cta floatright">
-                <a class="btn btn-large btn-theme btn-rounded" href="#">Request a quote</a>
-              </div> -->
+              <h1 class="mb-0" data-toggle="counter-up">150</h1><h1 class="mb-0" >+</h1>
+            </div>
+            <h5 class="mb-3">Happy Customers</h5>
+            <span
+              >We take great pride in the positive feedback we receive
+              from our customers, and we are committed to maintaining the high
+              level of service that has made them happy. We know that our
+              success is directly tied to the satisfaction of our customers, and
+              we will always do everything in our power to create positive
+              experiences for them.
+            </span>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+            <div class="d-flex align-items-center mb-4">
+              <div class="btn-lg-square bg-primary rounded-circle me-3">
+                <i class="fa fa-check text-white"></i>
+              </div>
+              <h1 class="mb-0" data-toggle="counter-up">7000</h1>
+              <h1 class="mb-0" > &nbsp; KW+</h1>
+            </div>
+            <h5 class="mb-3">Project Done</h5>
+            <span
+              >We believe that these projects are a testament to our
+              commitment to excellence and our ability to deliver exceptional
+              products and services. We are excited to showcase it on our
+              website and to add it to our portfolio of successful
+              projects.</span
+            >
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.7s">
+            <div class="d-flex align-items-center mb-4">
+              <div class="btn-lg-square bg-primary rounded-circle me-3">
+                <i class="fa fa-users-cog text-white"></i>
+              </div>
+              <h1 class="mb-0" data-toggle="counter-up">20</h1>
+              <h1 class="mb-0" >+</h1>
+            </div>
+            <h5 class="mb-3">Expert Workers</h5>
+            <span
+              >We are proud to have such an exceptional team of expert
+              workers working with us, and we believe that their commitment to
+              excellence is what sets us apart from our competitors. We will
+              continue to invest in our expert workers and provide them with the
+              support they need to deliver exceptional results for our
+              clients.</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Feature Start -->
+
+    <!-- About Start -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+      <div class="container about px-lg-0">
+        <div class="row g-0 mx-lg-0">
+          <div
+            class="col-lg-6 ps-lg-0 wow fadeIn"
+            data-wow-delay="0.1s"
+            style="min-height: 400px"
+          >
+            <div class="position-relative h-100">
+              <img
+                class="position-absolute img-fluid w-100 h-100"
+                src="img/about.jpg"
+                style="object-fit: cover"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="col-lg-6 about-text py-5 wow fadeIn"
+            data-wow-delay="0.5s"
+          >
+            <div class="p-lg-5 pe-lg-0">
+              <h6 class="text-primary">About Us</h6>
+              <h1 class="mb-4">
+                5+ Years Experience In Solar & Renewable Energy Industry
+              </h1>
+              <p>
+                <i class="fa fa-check-circle text-primary me-3"></i>Solar Umpire
+                is a sustainable energy solutions company
+              </p>
+              <p>
+                <i class="fa fa-check-circle text-primary me-3"></i>We
+                specialize in solar panel installation, maintenance, and repairs
+              </p>
+              <p>
+                <i class="fa fa-check-circle text-primary me-3"></i>Our team of
+                experts has years of experience in the solar industry
+              </p>
+              <p>
+                <i class="fa fa-check-circle text-primary me-3"></i>We use
+                high-quality materials and the latest technology to ensure
+                efficient and reliable installations
+              </p>
+              <p>
+                <i class="fa fa-check-circle text-primary me-3"></i>We offer
+                financing options to make solar energy accessible to everyone
+              </p>
+              <p>
+                <i class="fa fa-check-circle text-primary me-3"></i>We pride
+                ourselves on providing exceptional customer service and support
+              </p>
+              <p>
+                <i class="fa fa-check-circle text-primary me-3"></i>We provide
+                ongoing maintenance and support to ensure long-term efficiency
+                of our installations
+              </p>
+              <p>
+                <i class="fa fa-check-circle text-primary me-3"></i>We are
+                committed to making a positive impact on the environment and
+                communities we serve
+              </p>
+              <p>
+                <i class="fa fa-check-circle text-primary me-3"></i>We believe
+                in educating our clients about the benefits of renewable energy
+                and helping them make informed decisions about their energy
+                consumption
+              </p>
+              <p>
+                <i class="fa fa-check-circle text-primary me-3"></i>We are
+                dedicated to creating a brighter, more sustainable future for
+                all
+              </p>
+              <a href="" class="btn btn-primary rounded-pill py-3 px-5 mt-3"
+                >Explore More</a
+              >
             </div>
           </div>
         </div>
       </div>
-    </section>      
-    <section id="content">
+    </div>
+    <!-- About End -->
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
       <div class="container">
-          <div class="row">
-              <div class="span12">
-              <h4>Project completed in :</h4>  
-              </div>
-            </div>    
-        <div class="row">
-          <div class="span12">
-            <div class="row">
-              <div class="span3">
-                <div class="box aligncenter">
-                  <div class="aligncenter icon">
-                    <i class="icon-book icon-circled icon-64 active"></i>
-                  </div>
-                  <div class="text">
-                    <h6>Schools</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="span3">
-                <div class="box aligncenter">
-                  <div class="aligncenter icon">
-                    <i class="icon-home icon-circled icon-64 active"></i>
-                  </div>
-                  <div class="text">
-                    <h6>Residential</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="span3">
-                <div class="box aligncenter">
-                  <div class="aligncenter icon">
-                    <i class="icon-shopping-cart icon-circled icon-64 active"></i>
-                  </div>
-                  <div class="text">
-                    <h6>Commercial</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="span3">
-                <div class="box aligncenter">
-                  <div class="aligncenter icon">
-                    <i class="icon-building icon-circled icon-64 active"></i>
-                  </div>
-                  <div class="text">
-                    <h6>Society</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div
+          class="text-center mx-auto mb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 600px"
+        >
+          <h6 class="text-primary">Our Services</h6>
+          <h1 class="mb-4">We Are Pioneers In The World Of Renewable Energy</h1>
         </div>
-        
-      </div>
-    </section>
-    <section id="bottom">
-      <div class="container">
-        <div class="row">
-          <div class="span12">
-            <div class="aligncenter">
-              <div id="twitter-wrapper">
-                <div id="twitter">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-item rounded overflow-hidden">
+              <img class="img-fluid" src="img/img-600x400-1.jpg" alt="" />
+              <div class="position-relative p-4 pt-0">
+                <div class="service-icon">
+                  <i class="fa fa-solar-panel fa-3x"></i>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <footer>
-        <div class="container">
-          <div class="row">
-            <div class="span3">
-              <div class="widget">
-                <h5 class="widgetheading">Browse pages</h5>
-                <ul class="link-list">
-                  <li><a href="products.html">Solar Products</a></li>
-                  <li><a href="otherProducts.html">Other Products</a></li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="vision.html">Vision</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-            
-            <div class="span3">
-              <div class="widget">
-                <h5 class="widgetheading">Get in touch with us</h5>
-                <address>
-                  <strong>RenewX Solar Umpire (P) Ltd.</strong><br>
-                  H. No. 28, Sector 28<br>
-                  Gurugram. 122002<br>
-                  Haryana
-                 </address>
+                <h4 class="mb-3">Site Consultancy</h4>
                 <p>
-                  <i class="icon-phone"></i>+91-9555622146 <br>
-                  <i class="icon-envelope-alt"></i> solarumpire@gmail.com
+                  The consultancy procedure will provide the consumer with an
+                  essential high level options appraisal of the various key
+                  considerations to address when installing a solar PV array at
+                  a particular site and whether the proposed array(s) will be
+                  building integrated or ground mounted.
                 </p>
+                <a class="small fw-medium" href="/detail-service.html#first"
+                  >Read More<i class="fa fa-arrow-right ms-2"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item rounded overflow-hidden">
+              <img class="img-fluid" src="img/img-600x400-3.jpg" alt="" />
+              <div class="position-relative p-4 pt-0">
+                <div class="service-icon">
+                  <i class="fa fa-lightbulb fa-3x"></i>
+                </div>
+                <h4 class="mb-3">
+                  Design and Engineering (product engineering and design)
+                </h4>
+                <p>
+                  The design phase caters to identify and implement suitable
+                  grid infrastructure based on individual site characteristics,
+                  assessment of roof conditions and taking into account a
+                  structural engineer’s report if the need be. This will further
+                  be followed ...
+                </p>
+                <a class="small fw-medium" href="/detail-service.html#second"
+                  >Read More<i class="fa fa-arrow-right ms-2"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-item rounded overflow-hidden">
+              <img class="img-fluid" src="img/img-600x400-4.jpg" alt="" />
+              <div class="position-relative p-4 pt-0">
+                <div class="service-icon">
+                  <i class="fa fa-solar-panel fa-3x"></i>
+                </div>
+                <h4 class="mb-3">
+                  EPC (engineering, procurement and construction) Services
+                </h4>
+                <p>
+                  The Solar Umpire provide all-inclusive Engineering,
+                  Procurement and Construction services across a range of roof
+                  surfaces including flat, inclined, RCC or metal sheets.
+                  Derived after a planning and development process ...
+                </p>
+                <a class="small fw-medium" href="/detail-service.html#third"
+                  >Read More<i class="fa fa-arrow-right ms-2"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item rounded overflow-hidden">
+              <img class="img-fluid" src="img/img-600x400-5.jpg" alt="" />
+              <div class="position-relative p-4 pt-0">
+                <div class="service-icon">
+                  <i class="fa fa-wind fa-3x"></i>
+                </div>
+                <h4 class="mb-3">Training</h4>
+                <p>Nationally Recognized Training Personnel.</p>
+                <p>
+                  Recruited on a national scale, to yield a holistic training
+                  crew; the program is developed through the training sector for
+                  providing skills and knowledge to prepare individuals with on
+                  hand training and experience with acclimatization to the
+                  latest developments.
+                </p>
+                <a class="small fw-medium" href="/detail-service.html#fourth"
+                  >Read More<i class="fa fa-arrow-right ms-2"></i
+                ></a>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-  </div>
-  <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-32 active"></i></a>
-  <!-- javascript
-    ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="js/jquery.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="js/jcarousel/jquery.jcarousel.min.js"></script>
-  <script src="js/jquery.fancybox.pack.js"></script>
-  <script src="js/jquery.fancybox-media.js"></script>
-  <script src="js/google-code-prettify/prettify.js"></script>
-  <script src="js/portfolio/jquery.quicksand.js"></script>
-  <script src="js/portfolio/setting.js"></script>
-  <script src="js/jquery.flexslider.js"></script>
-  <script src="js/jquery.nivo.slider.js"></script>
-  <script src="js/modernizr.custom.js"></script>
-  <script src="js/jquery.ba-cond.min.js"></script>
-  <script src="js/jquery.slitslider.js"></script>
-  <script src="js/animate.js"></script>
+      </div>
+    </div>
+    <!-- Service End -->
 
-  <!-- Template Custom JavaScript File -->
-  <script src="js/custom.js"></script>
+    <!-- Feature Start -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+      <div class="container feature px-lg-0">
+        <div class="row g-0 mx-lg-0">
+          <div
+            class="col-lg-6 feature-text py-5 wow fadeIn"
+            data-wow-delay="0.1s"
+          >
+            <div class="p-lg-5 ps-lg-0">
+              <h6 class="text-primary">Why Choose Us!</h6>
+              <h1 class="mb-4">
+                Complete Commercial & Residential Solar Systems
+              </h1>
 
-</body>
+              <p>
+                <i class="fa fa-check-circle text-primary me-3"></i>Expertise:
+                Our team of experts has years of experience in the solar
+                industry and is dedicated to staying up-to-date with the latest
+                technology and best practices.
+              </p>
+              <p>
+                <i class="fa fa-check-circle text-primary me-3"></i>Quality: We
+                use only the highest quality materials and equipment to ensure
+                that our installations are efficient and reliable.
+              </p>
+              <p>
+                <i class="fa fa-check-circle text-primary me-3"></i>Customer
+                Service: We pride ourselves on providing exceptional customer
+                service and support. We are always available to answer your
+                questions and provide guidance throughout the entire process.
+              </p>
+              <p>
+                <i class="fa fa-check-circle text-primary me-3"></i
+                >Customization: We understand that every client's needs are
+                unique, and we work with you to develop customized solutions
+                that meet your specific requirements.
+              </p>
+              <p>
+                <i class="fa fa-check-circle text-primary me-3"></i>Financing
+                Options: We offer a range of financing options to make solar
+                energy accessible to everyone, including leasing and financing
+                programs.
+              </p>
+              <p>
+                <i class="fa fa-check-circle text-primary me-3"></i>Ongoing
+                Support: We provide ongoing maintenance and support to ensure
+                that our installations continue to operate efficiently for years
+                to come.
+              </p>
+              <p>
+                <i class="fa fa-check-circle text-primary me-3"></i
+                >Sustainability: We are committed to making a positive impact on
+                the environment and communities we serve. We believe that our
+                work is not just about installing solar panels but also about
+                educating our clients about the benefits of renewable energy and
+                helping them make informed decisions about their energy
+                consumption.
+              </p>
+              <p>
+                <i class="fa fa-check-circle text-primary me-3"></i>Competitive
+                Pricing: We offer competitive pricing without compromising on
+                quality or service.
+              </p>
+              <p class="mb-4 pb-2">
+                At Solar Umpire, we believe in building long-term relationships
+                with our clients and are committed to providing you with the
+                highest level of service and expertise. Contact us today to
+                learn more about how we can help you achieve your solar energy
+                goals.
+              </p>
+              <div class="row g-4">
+                <div class="col-6">
+                  <div class="d-flex align-items-center">
+                    <div class="btn-lg-square bg-primary rounded-circle">
+                      <i class="fa fa-check text-white"></i>
+                    </div>
+                    <div class="ms-4">
+                      <p class="mb-0">Quality</p>
+                      <h5 class="mb-0">Services</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex align-items-center">
+                    <div class="btn-lg-square bg-primary rounded-circle">
+                      <i class="fa fa-user-check text-white"></i>
+                    </div>
+                    <div class="ms-4">
+                      <p class="mb-0">Expert</p>
+                      <h5 class="mb-0">Workers</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex align-items-center">
+                    <div class="btn-lg-square bg-primary rounded-circle">
+                      <i class="fa fa-drafting-compass text-white"></i>
+                    </div>
+                    <div class="ms-4">
+                      <p class="mb-0">Free</p>
+                      <h5 class="mb-0">Consultation</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex align-items-center">
+                    <div class="btn-lg-square bg-primary rounded-circle">
+                      <i class="fa fa-headphones text-white"></i>
+                    </div>
+                    <div class="ms-4">
+                      <p class="mb-0">Customer</p>
+                      <h5 class="mb-0">Support</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 pe-lg-0 wow fadeIn"
+            data-wow-delay="0.5s"
+            style="min-height: 400px"
+          >
+            <div class="position-relative h-100">
+              <img
+                class="position-absolute img-fluid w-100 h-100"
+                src="img/feature.jpg"
+                style="object-fit: cover"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Feature End -->
+
+    <!-- Projects Start -->
+    <div class="container-xxl py-5 my-5">
+      <div class="container">
+        <div
+          class="text-center mx-auto mb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 600px"
+        >
+          <h6 class="text-primary">Our Projects</h6>
+          <h1 class="mb-4">
+            Visit Our Latest Solar And Renewable Energy Projects
+          </h1>
+        </div>
+        <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="col-12 text-center">
+            <ul class="list-inline mb-5" id="portfolio-flters">
+              <li class="mx-2 active" data-filter="*">All</li>
+              <li class="mx-2" data-filter=".first">Solar Panels</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="row g-4 portfolio-container wow fadeInUp"
+          data-wow-delay="0.5s"
+        >
+          <div class="col-lg-4 col-md-6 portfolio-item first">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img class="img-fluid" src="img/anwt.jpg" alt="" />
+              <div class="portfolio-btn">
+                <a
+                  class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                  href="img/anwt.jpg"
+                  data-lightbox="portfolio"
+                  ><i class="fa fa-eye"></i
+                ></a>
+                <a
+                  class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                  href=""
+                  ><i class="fa fa-link"></i
+                ></a>
+              </div>
+            </div>
+            <div class="pt-3">
+              <p class="text-primary mb-0">
+                Air and Water & Waste Water Treatment
+              </p>
+              <hr class="text-primary w-25 my-2" />
+              <p>
+                Octanetech offer complete water and waste water treatment
+                solutions for C&I and Industrial segment , we offer WTP, RO UF,
+                STP, ETP ,Pump house.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item first">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img class="img-fluid" src="img/swms.jpg" alt="" />
+              <div class="portfolio-btn">
+                <a
+                  class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                  href="img/img-600x400-5.jpg"
+                  data-lightbox="portfolio"
+                  ><i class="fa fa-eye"></i
+                ></a>
+                <a
+                  class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                  href=""
+                  ><i class="fa fa-link"></i
+                ></a>
+              </div>
+            </div>
+            <div class="pt-3">
+              <p class="text-primary mb-0">Solid Waste Management</p>
+              <hr class="text-primary w-25 my-2" />
+              <p>
+                Octanetech offer end to end complete solid waste management, In
+                this we offer semi and fully Automatic Organic waste composting
+                machine, Shredder machines, MSW Screen, Plastic shredding
+                machine.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item first">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img class="img-fluid" src="img/swh.jpg" alt="" />
+              <div class="portfolio-btn">
+                <a
+                  class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                  href="img/swh.jpg"
+                  data-lightbox="portfolio"
+                  ><i class="fa fa-eye"></i
+                ></a>
+                <a
+                  class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                  href=""
+                  ><i class="fa fa-link"></i
+                ></a>
+              </div>
+            </div>
+            <div class="pt-3">
+              <p class="text-primary mb-0">Hot Water Solution</p>
+              <hr class="text-primary w-25 my-2" />
+              <p>
+                Octanetech offer best in class hot water solution via Heat
+                Pumps, Solar Water Heater.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item first">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img class="img-fluid" src="img/ev.jpg" alt="" />
+              <div class="portfolio-btn">
+                <a
+                  class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                  href="img/ev.jpg"
+                  data-lightbox="portfolio"
+                  ><i class="fa fa-eye"></i
+                ></a>
+                <a
+                  class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                  href=""
+                  ><i class="fa fa-link"></i
+                ></a>
+              </div>
+            </div>
+            <div class="pt-3">
+              <p class="text-primary mb-0">Electric Vehicle</p>
+              <hr class="text-primary w-25 my-2" />
+              <p class="">
+                A solar vehicle or solar electric vehicle is an electric vehicle
+                powered completely or significantly by direct solar energy.
+                Usually, photovoltaic (PV) cells contained in solar panels
+                convert the sun's energy directly into electric energy. The term
+                "solar vehicle" usually implies that solar energy is used to
+                power all or part of a vehicle's propulsion. Solar power may be
+                also used to provide power for communications or controls or
+                other auxiliary functions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Projects End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 my-5">
+      <div class="container">
+        <div
+          class="text-center mx-auto mb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 600px"
+        >
+          <h6 class="text-primary">Testimonial</h6>
+          <h1 class="mb-4">What Our Clients Say!</h1>
+        </div>
+        <div
+          class="owl-carousel testimonial-carousel wow fadeInUp"
+          data-wow-delay="0.1s"
+        >
+          <div class="testimonial-item text-center">
+            <div class="testimonial-img position-relative">
+              <img
+                class="img-fluid rounded-circle mx-auto mb-5"
+                src="img/user.png"
+              />
+
+              <div class="btn-square bg-primary rounded-circle">
+                <i class="fa fa-quote-left text-white"></i>
+              </div>
+            </div>
+            <div class="testimonial-text text-center rounded p-4">
+              <p>
+                I am so pleased with the solar panel installation that Solar
+                Umpire did for my home. The team was professional,
+                knowledgeable, and completed the work in a timely manner. Since
+                the installation, I've noticed a significant reduction in my
+                energy bills. I highly recommend Solar Umpire to anyone looking
+                to go solar.
+              </p>
+              <h5 class="mb-1">Rahul Gupta</h5>
+            </div>
+          </div>
+          <div class="testimonial-item text-center">
+            <div class="testimonial-img position-relative">
+              <img
+                class="img-fluid rounded-circle mx-auto mb-5"
+                src="img/user.png"
+              />
+              <div class="btn-square bg-primary rounded-circle">
+                <i class="fa fa-quote-left text-white"></i>
+              </div>
+            </div>
+            <div class="testimonial-text text-center rounded p-4">
+              <p>
+                "I had a great experience with Solar Umpire. They were very
+                helpful in explaining the process and answering all of my
+                questions. The installation was completed quickly and
+                professionally, and I am thrilled with the results. I would
+                definitely recommend Solar Umpire to anyone looking to switch to
+                solar energy.
+              </p>
+              <h5 class="mb-1">Suchit Sharma</h5>
+            </div>
+          </div>
+          <div class="testimonial-item text-center">
+            <div class="testimonial-img position-relative">
+              <img
+                class="img-fluid rounded-circle mx-auto mb-5"
+                src="img/user.png"
+              />
+              <div class="btn-square bg-primary rounded-circle">
+                <i class="fa fa-quote-left text-white"></i>
+              </div>
+            </div>
+            <div class="testimonial-text text-center rounded p-4">
+              <p>
+                I am so happy that I chose Solar Umpire for my solar panel
+                installation. The team was friendly, professional, and completed
+                the work on time and within budget. I appreciated their
+                attention to detail and commitment to quality. The installation
+                process was seamless and hassle-free, and I have already noticed
+                a reduction in my energy bills. I highly recommend Solar Umpire.
+              </p>
+              <h5 class="mb-1">Dr Gulmohar degchi</h5>
+            </div>
+          </div>
+          <div class="testimonial-item text-center">
+            <div class="testimonial-img position-relative">
+              <img
+                class="img-fluid rounded-circle mx-auto mb-5"
+                src="img/user.png"
+              />
+              <div class="btn-square bg-primary rounded-circle">
+                <i class="fa fa-quote-left text-white"></i>
+              </div>
+            </div>
+            <div class="testimonial-text text-center rounded p-4">
+              <p>
+                Solar Umpire provided me with excellent service throughout the
+                entire process of installing solar panels on my home. They were
+                professional, efficient, and attentive to my needs. The
+                installation was completed quickly and to a high standard of
+                quality. I couldn't be happier with the results and would
+                recommend Solar Umpire to anyone looking to go solar.
+              </p>
+              <h5 class="mb-1">Keshav shirvastav</h5>
+            </div>
+          </div>
+          <div class="testimonial-item text-center">
+            <div class="testimonial-img position-relative">
+              <img
+                class="img-fluid rounded-circle mx-auto mb-5"
+                src="img/user.png"
+              />
+              <div class="btn-square bg-primary rounded-circle">
+                <i class="fa fa-quote-left text-white"></i>
+              </div>
+            </div>
+            <div class="testimonial-text text-center rounded p-4">
+              <p>
+                मैंने सोलर अंपायर से सोलर पैनल इंस्टॉल करवाया था और मैं स्वयं
+                उनकी सेवाओं से बहुत संतुष्ट हूं। वे बहुत पेशेवर और काम में
+                निष्ठावान हैं।
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-item text-center">
+            <div class="testimonial-img position-relative">
+              <img
+                class="img-fluid rounded-circle mx-auto mb-5"
+                src="img/user.png"
+              />
+              <div class="btn-square bg-primary rounded-circle">
+                <i class="fa fa-quote-left text-white"></i>
+              </div>
+            </div>
+            <div class="testimonial-text text-center rounded p-4">
+              <p>
+                सोलर अंपायर ने मुझे सोलर पैनल से संबंधित सभी जानकारी दी और मुझे
+                उनकी सेवाओं से बहुत संतुष्टि मिली। उनकी टीम बहुत कुशल है और मुझे
+                उनके साथ काम करने में बहुत आनंद आया।
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-item text-center">
+            <div class="testimonial-img position-relative">
+              <img
+                class="img-fluid rounded-circle mx-auto mb-5"
+                src="img/user.png"
+              />
+              <div class="btn-square bg-primary rounded-circle">
+                <i class="fa fa-quote-left text-white"></i>
+              </div>
+            </div>
+            <div class="testimonial-text text-center rounded p-4">
+              <p>
+                सोलर अंपायर की सेवाएं बेहतरीन हैं। उनके स्टाफ बहुत हेल्पफुल हैं
+                और उन्होंने मेरे घर पर सोलर पैनल इंस्ट
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-4 col-md-6">
+            <h5 class="text-white mb-4">Address</h5>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>Basement, Plot No - 28,
+              Chakkarpur, Sector 28, Gurugram, Haryana 122002
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>+91 - 95556 221460
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>solarumpire@gmail.com
+            </p>
+            <div class="d-flex pt-2">
+              <a
+                class="btn btn-square btn-outline-light btn-social"
+                href="https://twitter.com/SolarUmpire"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-square btn-outline-light btn-social"
+                href="https://www.facebook.com/people/RenewX-Solar-Umpire/100090796595436/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-square btn-outline-light btn-social"
+                href="https://www.instagram.com/Solar_Umpire_Official/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h5 class="text-white mb-4">Quick Links</h5>
+            <a class="btn btn-link" href="/about.html">About Us</a>
+            <a class="btn btn-link" href="/contact.html">Contact Us</a>
+            <a class="btn btn-link" href="/service.html">Our Services</a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h5 class="text-white mb-4">Project Gallery</h5>
+            <div class="row g-2">
+              <div class="col-4">
+                <img class="img-fluid rounded" src="img/gallery-1.jpg" alt="" />
+              </div>
+
+              <div class="col-4">
+                <img class="img-fluid rounded" src="img/gallery-3.jpg" alt="" />
+              </div>
+              <div class="col-4">
+                <img class="img-fluid rounded" src="img/gallery-4.jpg" alt="" />
+              </div>
+              <div class="col-4">
+                <img class="img-fluid rounded" src="img/gallery-5.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a href="#">Solar Umpire</a>, All Right Reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a
+      href="#"
+      class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
 </html>

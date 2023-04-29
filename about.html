@@ -3,269 +3,403 @@
   <head>
     <meta charset="utf-8" />
     <title>Solar Umpire</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
-    <!-- css -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700"
-      rel="stylesheet"
-    />
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <link href="css/bootstrap-responsive.css" rel="stylesheet" />
-    <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet" />
-    <link href="css/jcarousel.css" rel="stylesheet" />
-    <link href="css/flexslider.css" rel="stylesheet" />
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="css/google-font.css" rel="stylesheet" />
+
+    <!-- Icon Font Stylesheet -->
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
-    <!-- Theme skin -->
-    <link href="skins/default.css" rel="stylesheet" />
-    <!-- boxed bg -->
-    <link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
-    <!-- Fav and touch icons -->
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="144x144"
-      href="ico/apple-touch-icon-144-precomposed.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="114x114"
-      href="ico/apple-touch-icon-114-precomposed.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="72x72"
-      href="ico/apple-touch-icon-72-precomposed.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      href="ico/apple-touch-icon-57-precomposed.png"
-    />
-    <link rel="shortcut icon" href="ico/favicon.png" />
-
-    <!-- =======================================================
-    Theme Name: Flattern
-    Theme URL: https://bootstrapmade.com/flattern-multipurpose-bootstrap-template/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
   </head>
 
   <body>
-    <div id="wrapper">
-      <!-- toggle top area -->
-      <div class="hidden-top">
-        <div class="hidden-top-inner container">
-          <div class="row">
-            <div class="span12">
-              <ul>
-                <li>
-                  <strong
-                    >We are available for any custom works this month</strong
-                  >
-                </li>
-                <li>Main office: Springville center X264, Park Ave S.01</li>
-                <li>
-                  Call us <i class="icon-phone"></i> (123) 456-7890 - (123)
-                  555-7891
-                </li>
-              </ul>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark p-0 d-none">
+      <div class="row gx-0 d-none d-lg-flex">
+        <div class="col-lg-7 px-5 text-start">
+          <div class="h-100 d-inline-flex align-items-center me-4">
+            <small class="fa fa-map-marker-alt text-primary me-2"></small>
+            <small
+              >Basement, Plot No - 28, Chakkarpur, Sector 28, Gurugram, Haryana
+              122002</small
+            >
+          </div>
+          <div class="h-100 d-inline-flex align-items-center">
+            <small class="far fa-clock text-primary me-2"></small>
+            <small>Mon - Sat (09:00 AM - 06:00 PM)</small>
+          </div>
+        </div>
+        <div class="col-lg-5 px-5 text-end">
+          <div class="h-100 d-inline-flex align-items-center me-4">
+            <small class="fa fa-phone-alt text-primary me-2"></small>
+            <small>+91 - 95556 22146</small>
+          </div>
+          <div class="h-100 d-inline-flex align-items-center mx-n2">
+            <a
+              class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary"
+              href="https://www.facebook.com/people/RenewX-Solar-Umpire/100090796595436/"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary"
+              href="https://twitter.com/SolarUmpire"
+              ><i class="fab fa-twitter"></i
+            ></a>
+
+            <a
+              class="btn btn-square btn-link rounded-0"
+              href="https://www.instagram.com/Solar_Umpire_Official/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+      <a
+        href="index.html"
+        class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5"
+      >
+        <img src="./img/solar-umpire-logo.png" width="220px" height="120px" />
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler me-4"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+          <a href="index.html" class="nav-item nav-link">Home</a>
+          <a href="about.html" class="nav-item nav-link active">About</a>
+          <a href="service.html" class="nav-item nav-link">Service</a>
+          <a href="project.html" class="nav-item nav-link">Project</a>
+
+          <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+        <a
+          href="https://wa.me/919555622146"
+          class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block"
+          target="_blank"
+          >Get A Quote<i class="fa fa-arrow-right ms-3"></i
+        ></a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5">
+      <div class="container py-5">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">About Us</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a class="text-white" href="/index.html">Home</a>
+            </li>
+
+            <li class="breadcrumb-item text-white active" aria-current="page">
+              About
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="p-lg-5 pe-lg-0">
+            <h6 class="text-primary">About Us</h6>
+            <h1 class="mb-4">
+              5+ Years Experience In Solar & Renewable Energy Industry
+            </h1>
+            <p>
+              At Solar Umpire, we are passionate about delivering sustainable
+              energy solutions to our clients. We believe that solar power is
+              the future, and we are committed to helping our clients reduce
+              their carbon footprint and save money on their energy bills.
+            </p>
+            <p>
+              Our team of experts has years of experience in the solar industry
+              and is committed to providing our clients with the highest level
+              of service and expertise. We take the time to understand our
+              clients' unique needs and work with them to develop customized
+              solutions that meet their specific requirements.
+            </p>
+            <p>
+              Our services range from solar panel installation to maintenance
+              and repairs. We use only the highest quality materials and the
+              latest technology to ensure that our installations are efficient
+              and reliable. We also offer financing options to make solar energy
+              accessible to everyone.
+            </p>
+            <p>
+              We pride ourselves on providing exceptional customer service and
+              support. We are always available to answer our clients' questions
+              and provide guidance throughout the entire process, from the
+              initial consultation to the installation and beyond. Our
+              commitment to our clients doesn't end with the completion of a
+              project. We provide ongoing support and maintenance to ensure that
+              our installations continue to operate efficiently for years to
+              come.
+            </p>
+            <p>
+              At Solar Umpire, we are more than just a solar company. We are
+              committed to making a positive impact on the environment and the
+              communities we serve. We believe that our work is not just about
+              installing solar panels, but also about educating our clients
+              about the benefits of renewable energy and helping them to make
+              informed decisions about their energy consumption.
+            </p>
+            <p>
+              We are proud of our commitment to sustainability and our
+              dedication to providing exceptional products and services to our
+              clients. We look forward to working with you to create a brighter,
+              more sustainable future for all
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5 d-none">
+      <div class="container">
+        <div
+          class="text-center mx-auto mb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 600px"
+        >
+          <h6 class="text-primary">Team Member</h6>
+          <h1 class="mb-4">Experienced Team Members</h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="team-item rounded overflow-hidden">
+              <div class="d-flex">
+                <img class="img-fluid w-75" src="img/team-1.jpg" alt="" />
+                <div class="team-social w-25">
+                  <a
+                    class="btn btn-lg-square btn-outline-primary rounded-circle mt-3"
+                    href=""
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a
+                    class="btn btn-lg-square btn-outline-primary rounded-circle mt-3"
+                    href=""
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a
+                    class="btn btn-lg-square btn-outline-primary rounded-circle mt-3"
+                    href=""
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="p-4">
+                <h5>Full Name</h5>
+                <span>Designation</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="team-item rounded overflow-hidden">
+              <div class="d-flex">
+                <img class="img-fluid w-75" src="img/team-2.jpg" alt="" />
+                <div class="team-social w-25">
+                  <a
+                    class="btn btn-lg-square btn-outline-primary rounded-circle mt-3"
+                    href=""
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a
+                    class="btn btn-lg-square btn-outline-primary rounded-circle mt-3"
+                    href=""
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a
+                    class="btn btn-lg-square btn-outline-primary rounded-circle mt-3"
+                    href=""
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="p-4">
+                <h5>Full Name</h5>
+                <span>Designation</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="team-item rounded overflow-hidden">
+              <div class="d-flex">
+                <img class="img-fluid w-75" src="img/team-3.jpg" alt="" />
+                <div class="team-social w-25">
+                  <a
+                    class="btn btn-lg-square btn-outline-primary rounded-circle mt-3"
+                    href=""
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a
+                    class="btn btn-lg-square btn-outline-primary rounded-circle mt-3"
+                    href=""
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a
+                    class="btn btn-lg-square btn-outline-primary rounded-circle mt-3"
+                    href=""
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="p-4">
+                <h5>Full Name</h5>
+                <span>Designation</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- end toggle top area -->
-      <!-- start header -->
-      <!-- start header -->
-      <header>
-        <div class="container">
-          <!-- hidden top area toggle link -->
-          <div id="header-hidden-link"></div>
-          <!-- end toggle link -->
-          <div class="row nomargin">
-            <div class="span12">
-              <div class="headnav"></div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="span4">
-              <div class="logo">
-                <a href="index.html"
-                  ><img src="img/logo.png" alt="" class="logo"
-                /></a>
-              </div>
-            </div>
-            <div class="span8">
-              <div class="navbar navbar-static-top">
-                <div class="navigation">
-                  <nav>
-                    <ul class="nav topnav">
-                      <li class="">
-                        <a href="index.html">Home</a>
-                      </li>
-                      <li class="">
-                        <a href="products.html">Solar Products</a>
-                      </li>
-
-                      <li class="">
-                        <a href="otherProducts.html">Other Products</a>
-                      </li>
-                      <li class="">
-                        <a href="services.html">Services</a>
-                      </li>
-                      <li class="">
-                        <a href="vision.html">Vision</a>
-                      </li>
-                      <li class="active">
-                        <a href="about.html">About us</a>
-                      </li>
-                      <li class="">
-                        <a href="contact.html">Contact</a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-                <!-- end navigation -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <!-- end header -->
-      <section id="inner-headline">
-        <div class="container">
-          <div class="row">
-            <div class="span4">
-              <div class="inner-heading">
-                <h2>About us</h2>
-              </div>
-            </div>
-            <div class="span8">
-              <ul class="breadcrumb">
-                <li>
-                  <a href="#"><i class="icon-home"></i></a
-                  ><i class="icon-angle-right"></i>
-                </li>
-                <li><a href="#">Pages</a><i class="icon-angle-right"></i></li>
-                <li class="active">About us</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="content">
-        <div class="container">
-          <div class="row">
-            <div class="span12">
-              <p>
-                To believe in sustainable development and to address this
-                requirement, Solar Umpire has embarked on a strategic plan to
-                build its business in solar energy. We are dedicated to help
-                others take control of their energy costs by suggesting them
-                switch to solar. We believe that shifting to sustainable energy
-                has become imperative in wake of ever increasing global energy
-                needs. By installing solar on their own home, they have reaped
-                the many benefits of solar and want other families to benefit
-                from solar too, all while helping to preserve our beautiful
-                nature.
-              </p>
-              <p>
-                Our cut above team of developers, project managers, designers
-                and engineers together with top notch knowledge in construction,
-                civil, and electrical engineering offer end to end solution of a
-                solar plant, from site identification and procurement of permits
-                to engineering, procurement and construction (EPC), right
-                through to operation and maintenance (O&amp;M).
-              </p>
-
-              <p>
-                We exists to happily serve our community with the incredible
-                experience of benefiting from the power of the sun at their
-                homes or businesses. Since our business is built on happy
-                customers who are eager to refer their friends and family, it’s
-                in our best interest to provide outstanding customer
-                satisfaction and service in every aspect of installation. We
-                want you to be happy and enjoy saving money! We are dedicated to
-                making sure that quality is built into everything we do and that
-                our customers always receive the best products and service,
-                keeping them informed every step of the way.
-              </p>
-
-              <p>
-                We are also engaged in distribution of Solar based LED Lighting
-                solutions like Street lights, Solar Home Lights, Solar Lanterns
-                with the support of our strong Technical team with engineering
-                background.
-              </p>
-
-              <p>
-                We are working closely with our associates to explore areas for
-                expanding our distribution base of Solar Products.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <footer>
-        <div class="container">
-          <div class="row">
-            <div class="span3">
-              <div class="widget">
-                <h5 class="widgetheading">Browse pages</h5>
-                <ul class="link-list">
-                  <li><a href="products.html">Solar Products</a></li>
-                  <li><a href="otherProducts.html">Other Products</a></li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="vision.html">Vision</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="span3">
-              <div class="widget">
-                <h5 class="widgetheading">Get in touch with us</h5>
-                <address>
-                  <strong>RenewX Solar Umpire (P) Ltd.</strong><br />
-                  H. No. 28, Sector 28<br />
-                  Gurugram. 122002<br />
-                  Haryana
-                </address>
-                <p>
-                  <i class="icon-phone"></i>+91-9555622146 <br />
-                  <i class="icon-envelope-alt"></i> solarumpire@gmail.com
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
-    <a href="#" class="scrollup"
-      ><i class="icon-chevron-up icon-square icon-32 active"></i
-    ></a>
-    <!-- javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jcarousel/jquery.jcarousel.min.js"></script>
-    <script src="js/jquery.fancybox.pack.js"></script>
-    <script src="js/jquery.fancybox-media.js"></script>
-    <script src="js/google-code-prettify/prettify.js"></script>
-    <script src="js/portfolio/jquery.quicksand.js"></script>
-    <script src="js/portfolio/setting.js"></script>
-    <script src="js/jquery.flexslider.js"></script>
-    <script src="js/jquery.nivo.slider.js"></script>
-    <script src="js/modernizr.custom.js"></script>
-    <script src="js/jquery.ba-cond.min.js"></script>
-    <script src="js/jquery.slitslider.js"></script>
-    <script src="js/animate.js"></script>
+    <!-- Team End -->
 
-    <!-- Template Custom JavaScript File -->
-    <script src="js/custom.js"></script>
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-4 col-md-6">
+            <h5 class="text-white mb-4">Address</h5>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>Basement, Plot No - 28,
+              Chakkarpur, Sector 28, Gurugram, Haryana 122002
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>+91 - 95556 221460
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>solarumpire@gmail.com
+            </p>
+            <div class="d-flex pt-2">
+              <a
+                class="btn btn-square btn-outline-light btn-social"
+                href="https://twitter.com/SolarUmpire"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-square btn-outline-light btn-social"
+                href="https://www.facebook.com/people/RenewX-Solar-Umpire/100090796595436/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-square btn-outline-light btn-social"
+                href="https://www.instagram.com/Solar_Umpire_Official/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h5 class="text-white mb-4">Quick Links</h5>
+            <a class="btn btn-link" href="/about.html">About Us</a>
+            <a class="btn btn-link" href="/contact.html">Contact Us</a>
+            <a class="btn btn-link" href="/service.html">Our Services</a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h5 class="text-white mb-4">Project Gallery</h5>
+            <div class="row g-2">
+              <div class="col-4">
+                <img class="img-fluid rounded" src="img/gallery-1.jpg" alt="" />
+              </div>
+
+              <div class="col-4">
+                <img class="img-fluid rounded" src="img/gallery-3.jpg" alt="" />
+              </div>
+              <div class="col-4">
+                <img class="img-fluid rounded" src="img/gallery-4.jpg" alt="" />
+              </div>
+              <div class="col-4">
+                <img class="img-fluid rounded" src="img/gallery-5.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a href="#">Solar Umpire</a>, All Right Reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a
+      href="#"
+      class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
   </body>
 </html>
